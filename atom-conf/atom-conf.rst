@@ -18,13 +18,14 @@ This part of the document is how to use Atom to create documentation/workshops. 
 
 #. Push the data to the personal GitHub location
 
-#. Use git pull to upload the data into the organisational GitHub location
+#. Use git pull request to upload the data into the organisational GitHub location
 
 
 Clone the templates
-++++++++++++++++++
++++++++++++++++++++
 
-Create a directory in a location of choice on your machine. The next step is dependent on the way you want to run the **git** command. The easiest way is to open a command line or terminal session and go too the location for your document. The below screenshots are an example from a *Mac O/S*. The location used for the document is **Documents/github/test**.
+Create a directory (project) in a location of choice on your machine. The next step is dependent on the way you want to run the **git** command. The easiest way is to open a command line or terminal session and go too the location for your document. The below screenshots are an example from a **Mac O/S**. The location used for this document is **Documents/github/test**.
+
 The below screenshot shows the content of the location on which the templates are stored.
 
 .. figure:: images/1.png
@@ -49,7 +50,7 @@ Copy the cloned *workshop-repo-template* to a new directory or rename it. By cop
 
 .. note:: If changes have happened, you can check that by repeating the first two steps and run the command **git pull https://github.com/nutanixworkshops/workshop-repo-template** to get the latest changes if there are any.
 
-After you have created the directory in which you want to work/create the documentation and have copied the template files in, copy a file called .gitignore in the root of the working directory. This will make sure that not needed files are uploaded to the GitHub server. An example is .DS_Dstore or thumbs.ini. Download the file 'here<a href=<.gitignore">_'.
+After you have created the directory in which you want to work/create the documentation and have copied the template files in, copy a file called .gitignore in the root of the working directory. This will make sure that not needed files are uploaded to the GitHub server. An example is .DS_Dstore or thumbs.ini. Download the file :download:`.gitignore file <../.gitignore>`. Change the downloaded **txt** file to .gitignore and place in the root of the project.
 
 Start using Atom
 ++++++++++++++++
@@ -68,38 +69,60 @@ Saving the documents
 
 After you have created your document and before you can build the cahnges into a HTML layout, you need to save the document. Saving the document makes it possible afterwards to Commit, Push and build the documentation.
 
-Saving the documentation is very easy, just save in Atom as you are used to save documents as in Word or other tools you use. Click File -> Save, or the hot key to save the data.
+Saving the documentation is very easy, just save in Atom as you are used to save documents as in Word or other tools you use. Click **File -> Save**, or the hot key to save the data.
 
 (Optional) Build the data
 +++++++++++++++++++++++++
 
 Building data means that a tool will translate the create document (.rst file) into HTMl pages. To build the HTML pages the command **sphinx-build** will be run from the command line/terminal session. This means the sphinx packages have been installed as mentioned in pre-requirements part of this workshop.
 
-Steps to take ta get a build ready:
+Steps to take to get a build ready:
 
-#. Open the command line/terminal Sessions
+#. Open the command line/terminal session
 
 #. Change to the root of the directory of the documentation you want to create. In my example Documents/test/test (I have copied the workshop-repo-template).
 
-#. Run the **sphinx-build** command to create the HTML pages.
+.. figure:: images/3.png
+  :width: 300px
+
+#. Run the **sphinx-build** command to create the HTML pages. The command is **sphinx-build . _build**. A small explenation:
+
+* The **.** stands for the current directory, search for a rst file and follow the links in the file.
+
+* **_build** stands for the output folder of the HTML pages.
+
+.. figure:: images/4.png
+  :width: 400px
 
 #. Test the layout in the browser
 
+.. figure:: images/4a.png
 
-“Link” GitHub page to Atom.
-+++++++++++++++++++++++++++
+Commit the data
++++++++++++++++
 
-To have the GitHub page for the trainings “linked” to Atom use the following procedure.
-After starting Atom, click on Packages -> Command Palette -> Toggle
+After you have saved and the data loooks quite good, you have to commit the changes that have been made. To do this, select **Packages -> GitHub -> Toggle Git Tab** (or use the hotkeys).
 
-.. figure:: images/6.png
+.. figure:: images/4b.png
   :width: 300px
 
-The in the new dialog start typing **git**
+When the screen opens, on the lefthand side of the Atom screen you will find colorized line(s) with data. These lines are what will be done on the commit ("write") action local. It will also be the actions that will be produced in the location on GitHub.
 
-.. figure:: images/7.png
+.. figure:: images/4c.png
+
+By clicking on the Stage All text (top rightcorner), all actions are to be commited. Now you can select the one you don't want, by selecting them and right-click and select **Discard Changes**.
+
+.. figure:: images/4d.png
   :width: 400px
 
-Select **GitHub: Clone** and fill out the URL that you want to have cloned onto your machine in the next location dialog
+If you are interested in the changes, click on the file and you will see what will happen. Are all the changes ok, then provide a Commit message and click on the **Commit to master** button.
 
-Clone from is the URL and the second location is to local directory where you want to have the data stored.
+.. figure:: images/4e.png
+
+After this the status bar at the bottom of the git pane should show **Push 1**.
+
+.. figure:: images/4f.png
+
+Now we are all set to push the data towards the GitHub personal part. Click on the **Push 1** button to upload the data.
+
+.. figure:: images/4g.png
