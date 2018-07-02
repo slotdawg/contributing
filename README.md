@@ -1,2 +1,4 @@
-# AtomWorkshop
-Atom Workshop - Installation, configuration and usage
+# Contributing to Nutanix Workshops
+Atom - Installation, configuration and usage
+GitHub - Workflow
+TODO: Nutanix Workshop admin - Publishing a workshop
