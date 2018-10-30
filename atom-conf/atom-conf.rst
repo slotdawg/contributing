@@ -35,7 +35,7 @@ To get these templates onto our machine the **git** command will be used to clon
 
 Steps to be taken:
 
-#. Open de commnad line/terminal
+#. Open de command line/terminal
 
 #. cd to the location where the created directory is
 
@@ -62,12 +62,12 @@ After the installation start Atom. After it has started it will show roughly lik
 You can close the panes and select what you want to do with them in the future/next start.
 To open the document, click on file -> Open and navigate to your directory where you have your index.rst file. Open this file and you should see a pane/tab with the example file.
 
-Make the changes so it will show your documentation. To have a quick referencens document, use http://docutils.sourceforge.net/docs/user/rst/quickref.html as and example. Otherwise search google.com on ReStructuredTest reference.
+Make the changes so it will show your documentation. To have a quick reference document, use http://docutils.sourceforge.net/docs/user/rst/quickref.html as and example. Otherwise search google.com on ReStructuredTest reference.
 
 Saving the documents
 ++++++++++++++++++++
 
-After you have created your document and before you can build the cahnges into a HTML layout, you need to save the document. Saving the document makes it possible afterwards to Commit, Push and build the documentation.
+After you have created your document and before you can build the changes into a HTML layout, you need to save the document. Saving the document makes it possible afterwards to Commit, Push and build the documentation.
 
 Saving the documentation is very easy, just save in Atom as you are used to save documents as in Word or other tools you use. Click **File -> Save**, or the hot key to save the data.
 
@@ -98,10 +98,61 @@ Steps to take to get a build ready:
 
 .. figure:: images/4a.png
 
+Optional .gitignore file
+++++++++++++++++++++++++
+
+By adding a .gitignore file in the root of your directory, you can tell git to NOT push the files and directories into the Repository on GitHub.
+An example of such a file is shown below:
+
+::
+
+  # Compiled source #
+  ###################
+  *.com
+  *.class
+  *.dll
+  *.exe
+  *.o
+  *.so
+
+  # Packages #
+  ############
+  # it's better to unpack these files and commit the raw source
+  # git has its own built in compression methods
+  *.7z
+  *.dmg
+  *.gz
+  *.iso
+  *.jar
+  *.rar
+  *.tar
+  *.zip
+
+  # Logs and databases #
+  ######################
+  *.log
+  *.sql
+  *.sqlite
+
+  # OS generated files #
+  ######################
+  .DS_Store
+  .DS_Store?
+  ._*
+  .Spotlight-V100
+  .Trashes
+  ehthumbs.db
+  Thumbs.db
+
+  # Build files #
+  ###############
+  _build
+  build
+
 Commit the data
 +++++++++++++++
 
-After you have saved and the data loooks quite good, you have to commit the changes that have been made. To do this, select **Packages -> GitHub -> Toggle Git Tab** (or use the hotkeys).
+After you have saved and the data looks quite good, you have to commit the changes that have been made. To do this, select **Packages -> GitHub -> Toggle Git Tab** (or use the hotkeys).
 
 .. figure:: images/4b.png
   :width: 300px
@@ -110,7 +161,7 @@ When the screen opens, on the lefthand side of the Atom screen you will find col
 
 .. figure:: images/4c.png
 
-By clicking on the Stage All text (top rightcorner), all actions are to be commited. Now you can select the one you don't want, by selecting them and right-click and select **Discard Changes**.
+By clicking on the Stage All text (top right corner), all actions are to be committed. Now you can select the one you don't want, by selecting them and right-click and select **Discard Changes**.
 
 .. figure:: images/4d.png
   :width: 400px
@@ -118,11 +169,14 @@ By clicking on the Stage All text (top rightcorner), all actions are to be commi
 If you are interested in the changes, click on the file and you will see what will happen. Are all the changes ok, then provide a Commit message and click on the **Commit to master** button.
 
 .. figure:: images/4e.png
+  :width: 400px
 
 After this the status bar at the bottom of the git pane should show **Push 1**.
 
 .. figure:: images/4f.png
+  :width: 400px
 
 Now we are all set to push the data towards the GitHub personal part. Click on the **Push 1** button to upload the data.
 
 .. figure:: images/4g.png
+  :width: 400px

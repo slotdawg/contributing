@@ -6,7 +6,7 @@ Atom Installation
 
 Goto https://atom.io/. The webpage will show you the version that is supported for your O/S.
 Download and install the software package by following the screen and wizards you might encounter.
-For an example for installting Atom on Windows 10, follwing this video: https://www.youtube.com/watch?v=nshxC0YO_X0
+For an example for installing Atom on Windows 10, following this video: https://www.youtube.com/watch?v=nshxC0YO_X0
 
 
 
@@ -23,16 +23,16 @@ After the installation start Atom and change the preferences.
 .. figure:: images/2.png
   :width: 400px
 
-Click on the **Packges** button and the below screen should be shown for the github-plus packes.
+Click on the **Packages** button and the below screen should be shown for the github-plus packages.
 
 .. figure:: images/3.png
   :width: 400px
 
 Click on the **Install** button to have the package installed.
 
-Also have a look at this YouTube video to get some idea on what you have done just now: https://www.youtube.com/watch?v=TzKi6ZZtIAo.
+Have a look at this YouTube video to get some idea on what you have done just now: https://www.youtube.com/watch?v=TzKi6ZZtIAo.
 
-Repeat these steps for the foloowing extra packages
+Repeat these steps for the following extra packages
 
 1. Git-plus
 
