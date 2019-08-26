@@ -32,7 +32,7 @@
 Installation of Atom and Sphinx
 -------------------------------
 
-This document describes the way of installing to needed tools to create workshop content in the sphinx format called ReStructredText (RST). Using this method it is possible to have the content “separated” from type of document. In the first place we will use the rst file as a source and have a sphinx compiler on the internet to create the HTML pages that we show in the workshops.
+Demonstrating how to update and publish a bootcamp. This document describes the way of installing to needed tools to create workshop content in the sphinx format called ReStructredText (RST). Using this method it is possible to have the content “separated” from type of document. In the first place we will use the rst file as a source and have a sphinx compiler on the internet to create the HTML pages that we show in the workshops.
 
 .. note:: To have Atom integrate with GitHub, make sure you have an account there.
 
